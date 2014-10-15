@@ -1,0 +1,85 @@
+---
+---
+//Above lines should trigger jeckyl build.
+
+@import "extends/settings";
+@import "extends/utils";
+@import "modules/typography";
+@import "modules/media";
+@import "modules/social";
+
+html,
+body {
+	@extend %reset;
+	background-color: $c_body_bg;
+	color: $c_content;
+}
+
+#page {
+	background-color: $c_content_bg;
+	margin: $m_whitespace auto (2 * $m_whitespace);
+	padding: 1px 0;
+	width: 50em;
+}
+
+header {
+	@extend %nocollapse;
+	background-color: $c_bg_header;
+	padding: $m_whitespace $m_whitespace ($m_whitespace * 2);
+}
+
+main {
+	@extend %nocollapse;
+	@extend %p_box;
+	padding-bottom: $m_whitespace;
+	position: relative;
+}
+
+%bordered-box {
+	border: ($m_whitespace / 10) solid $c_content;
+	border-left: 0;
+	border-right: 0;
+}
+
+aside {
+	@extend %nocollapse;
+	@extend %bordered-box;
+	background-color: $c_bg_menu;
+	box-shadow:
+				0 ($m_whitespace / 8) 0 0 $c_content_bg,
+				0 ($m_whitespace / 4) 0 0 $c_content
+				;
+	color: $c_fg_menu;
+	height: 1em;
+	padding: ($m_whitespace / 2) $m_whitespace;
+	position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+	text-align: center;
+}
+
+aside a, footer a {
+	@extend %reset;
+}
+
+nav > li {
+	display: inline;
+	&::after {
+		content: "\00a0|";
+	}
+	&:last-child::after {
+		display: none;
+	}
+}
+
+
+footer {
+	@extend %nocollapse;
+	@extend %p_box;
+	@extend %bordered-box;
+	background-color: $c_bg_header;
+	border-bottom: 0;
+	color: $c_fg_header;
+	text-align: center;
+}
