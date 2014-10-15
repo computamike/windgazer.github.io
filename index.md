@@ -1,6 +1,5 @@
 ---
 title: The Insignificant Cookbook
-layout: default
 ---
 
 # My place to rant and rave

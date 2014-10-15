@@ -72,6 +72,14 @@ header > h1 {
 		right: $m_whitespace;
 		left: $m_whitespace;
 	}
+	& img {
+		max-width: 90%;
+	}
+}
+
+img:last-child {
+	display: block;
+	margin: 0 auto;
 }
 
 #home > p {

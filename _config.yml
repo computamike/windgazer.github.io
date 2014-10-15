@@ -2,3 +2,16 @@ title:            The Insignificant Pebble
 tagline:          'The meandering experiences of a Geek'
 url:              http://windgazer.github.io
 author:           Martin Reurings
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
