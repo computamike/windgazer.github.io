@@ -1,5 +1,6 @@
 ---
 title: Home-cooked Pasta
+permalink: /post/home-cooked-pasta
 layout: recipe
 tags:
     - pasta

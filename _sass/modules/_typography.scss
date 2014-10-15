@@ -50,10 +50,10 @@ header > h1 {
 		content: 'The';
 		position: absolute;
 		font-size: 0.5em;
-		-webkit-transform: rotate(270deg) translateX(-0.5em) translateY(-0.5em);
+		-webkit-transform: rotate(270deg) translateX(-0.5em) translateY(0.5em);
 	}
 	&::after {
-		content: 'Insignificant C\221E kb\221E k';
+		content: 'Insignificant P3bbl3';
 		position: absolute;
 		left: 0;
 		top: 0;
