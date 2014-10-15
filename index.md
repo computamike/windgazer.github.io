@@ -1,5 +1,5 @@
 ---
-title: The Insignificant Cookbook
+title: Home
 ---
 
 # My place to rant and rave
