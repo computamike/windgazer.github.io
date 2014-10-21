@@ -17,9 +17,9 @@ So in order to still use images, while also embedding them, base64 encoding shou
 To answer that question I figured I'd make this post, on github, and see how it'd render when viewed on github and eventually live on my blog... The markdown is easy enough:
  
  ```
- ![unstaged files][img1]
+ !\[unstaged files\]\[img1\]
  
- [img1]: data:image/png;base64,.....
+ \[img1\]: data:image/png;base64,.....
  ```
  
 Excuse me for wanting to keep this document manageable and cutting the actual base64 out of the code-sample ;) The final result should be showing an image on the next line though:
