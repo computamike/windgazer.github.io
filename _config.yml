@@ -3,6 +3,8 @@ tagline:          'The meandering experiences of a Geek'
 url:              http://pebble.windgazer.nl
 author:           Martin Reurings
 
+markdown: redcarpet
+
 defaults:
   -
     scope:
