@@ -2,7 +2,6 @@
 title: Can I embed png's in Markdown?
 date: 2014-06-16 12:00
 tags:
-  - personal
   - markdown
   - internet
 excerpt: Just some crazy concept I was wondering about...
@@ -15,13 +14,13 @@ A good image is worth more than a {pick your quantitative value} words. However,
 So in order to still use images, while also embedding them, base64 encoding should be the holy grail. This has a nice side-benefit of forcing you to considder how many images, how big the images are, etc... But first things first, is it even going to work?
 
 To answer that question I figured I'd make this post, on github, and see how it'd render when viewed on github and eventually live on my blog... The markdown is easy enough:
- 
+
 ```
 ![avatar][img1]
- 
+
 [img1]: data:image/png;base64,.....
 ```
- 
+
 Excuse me for wanting to keep this document manageable and cutting the actual base64 out of the code-sample ;) The final result should be showing an image on the next line though:
 
 ![avatar][img1]
