@@ -82,8 +82,18 @@ img:last-child {
 	margin: 0 auto;
 }
 
-#home > p {
+#home {
 	-webkit-columns: 3;
+}
+
+#home > h1,
+#home > h2,
+#home > h3,
+#home pre,
+#home iframe,
+#home > ul,
+#home > ol {
+	-webkit-column-span: all;
 }
 
 p {
