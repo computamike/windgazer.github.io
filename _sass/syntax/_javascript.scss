@@ -1,0 +1,36 @@
+/*
+## .kc
+Pre-defined constant (true, false, null, etc...)
+*/
+.kc {
+    color: cyan;
+}
+
+
+/*
+## .kd
+Pre-defined keywords (function, var, etc....)
+*/
+
+.kd,
+.language-javascript .k {
+    color: gray;
+}
+
+/*
+## .nx
+User-defined keywords (var name, function name, etc...)
+*/
+
+.nx {
+    color: gold;
+}
+
+/*
+## .mi
+Number?
+*/
+
+.mi {
+    color: purple;
+}
