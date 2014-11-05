@@ -1,0 +1,9 @@
+<ul class="{{include.class}}">{% for post in include.posts %}
+    <li class="media">
+        <img src="{{ site.url }}/thumbs/{{post.tags.first}}.png" alt="thumb" />
+        <h3>{{ post.title }}</h3>
+        {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>{% endif %}
+        <p class="introduction">{{ post.excerpt | strip_html | truncatewords: 10 }}</p>
+        <a href="{{ site.url }}{{ post.url }}">More...</a>
+    </li>
+{% endfor %}</ul>
