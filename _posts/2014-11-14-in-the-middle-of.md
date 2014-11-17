@@ -110,4 +110,5 @@ Tower Information Centre, who's son had studied in Leeuwarden for a while. And a
 walking through the historical sites of 'The World' we made our way to 'Undara National
 Park', where we saw the sun set from the rim of an old vulcano and will today walk the
 lava-tubes with a guide. Until next time, when I will tell you more of this!
- 
+
+[I]: http://www.wikicamps.com.au/
