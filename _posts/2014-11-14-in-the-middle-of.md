@@ -81,6 +81,8 @@ we decided to fall back on our app [WikiCamps AU][I] and found ourselves a cheap
 we decided to spend a day just reading books and hanging around in the shades of the
 trees.
 
+[![Carnarvon Gorge is Paradise][imgI]][II]
+
 The next day we decided to set of early to get to Carnarvon Gorge in the early morning and
 start on the track while it was nice and cool. Which we did. We started the track around
 8:30 after already driving roughly 100km, the bonus of living in a car and tent is that
@@ -111,4 +113,10 @@ walking through the historical sites of 'The World' we made our way to 'Undara N
 Park', where we saw the sun set from the rim of an old vulcano and will today walk the
 lava-tubes with a guide. Until next time, when I will tell you more of this!
 
+[![Lava Tube exit][imgII]][III]
+
 [I]: http://www.wikicamps.com.au/
+[II]: https://www.flickr.com/photos/windgazer/15814010201
+[imgI]: https://farm8.staticflickr.com/7550/15814010201_0f80ee8b1f_z.jpg
+[III]: https://www.flickr.com/photos/windgazer/15817486522
+[imgII]: https://farm9.staticflickr.com/8651/15817486522_cbaef5761d_o.jpg
