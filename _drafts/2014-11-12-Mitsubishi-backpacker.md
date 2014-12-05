@@ -21,3 +21,7 @@ tags:
 [imgIII]:https://farm8.staticflickr.com/7500/15631342790_a3cd25e7f9_z.jpg
 [IV]: https://www.flickr.com/photos/windgazer/15816215565
 [imgIV]: https://farm9.staticflickr.com/8533/15816215565_39e168a08d_z.jpg
+
+
+`<a href="(.*)" title="(.*), on Flickr"><img src="(.*)" width.*></a>`
+`[![$2][imgI]][I]\n[I]: $1\n[imgI]: $3\n`
