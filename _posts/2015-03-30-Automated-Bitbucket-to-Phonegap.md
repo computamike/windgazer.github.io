@@ -86,14 +86,15 @@ it just silently ignores that you tried to push it's buttons ;)
 
 ## Next
 
-In the [next chapter][5] we'll be discussing how to set up a release branch in your repository
+In the [next chapter][n] we'll be discussing how to set up a release branch in your repository
 and how to use that branch with [Grunt][4] to create your clean build.
 
 [1]: https://build.phonegap.com/
 [2]: https://github.com/pricing/
 [3]: https://bitbucket.org/plans/
 [4]: http://gruntjs.com/
-[5]: ./bitbucket2phonegap-ptII/
+
+[n]: /post/bitbucket2phonegap-ptII/
 
 [I]: https://www.flickr.com/photos/windgazer/16976845135
 [imgI]: https://farm8.staticflickr.com/7621/16976845135_525e4112fa_z.jpg
