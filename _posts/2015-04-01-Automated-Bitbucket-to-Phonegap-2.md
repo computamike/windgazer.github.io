@@ -9,6 +9,8 @@ tags:
   - windgazer
 ---
 
+## Creating a clean build
+
 Continuing to build on our [previous article][p] that dealt with linking [Phonegap][1] to
 [Bitbucket][3], this post is going to walk you through creating a clean release directory.
 It's nice to have a place where you can have automated tools mess with your code, but at
@@ -17,8 +19,6 @@ the same time not messing with your actual codebase.
 I'll be building a reference implementation on *[grunt-build][6]* while working on this
 article, to validate my commands and hopefully to have a nice reference build to clone
 from when I start new projects.
-
-## Creating a clean build
 
 ### Create a build directory
 
