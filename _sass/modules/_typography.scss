@@ -108,3 +108,27 @@ p {
 a {
 	color: $c_cta;
 }
+
+.tag_javascript {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Coda', cursive;
+	}
+}
+
+.tag_personal {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Gabriela', serif;
+	}
+}
+
+.tag_markdown {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Libre Baskerville', serif;
+	}
+}
+
+.tag_css {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Poiret One', cursive;
+	}
+}
