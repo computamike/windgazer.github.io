@@ -1,6 +1,6 @@
 ---
-title: Orphans, Grunt and clean Builds
-excerpt: How to create a clean release branch and make good use of it with Grunt.
+title: Grunt and clean Builds
+excerpt: How to create a clean release folder with Grunt and do some processing there.
 date: 2015-04-01
 permalink: /post/bitbucket2phonegap-ptII
 tags:
@@ -122,14 +122,14 @@ Personally I think [grunt-usemin][g3] is pretty much the holy grail on this part
 part of the build. So, go ahead, give it a go!
 
 ```
-npm install grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin grunt-filerev --save-dev
+npm install grunt-usemin grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin grunt-filerev --save-dev
 ```
 
 Now, since we've copied our code to a nice safe playground, we can mess with it all we
 want. Of course, that also means we have to point usemin to our release directory. That
 way only files that are used for release will get altered. Also of note is that you must
 set the proper `dest` option towards your release dir and finally, it's convenient to also
-point the `stagin` option to something in your target dir.
+point the `staging` option to something in your target dir.
 
 ```javascript
 useminPrepare: {
@@ -166,29 +166,155 @@ testing convenience.
 Finally, when you're done with all of this, or actually before you do any of this, it's
 important to clean the build directory. It is extremely important to clean your build dir
 before doing a new build, you have to guarantee that the build uses only, and exactly,
-what you intend, old stuff must be cleared.
+what you intend, old growth must be cleared with extreme prejudice.
 
+For this last performance we're going to use *[grunt-contrib-clean][g8]*. Quite obviously
+it does what it says on the packaging, clean stuff. By now you should know the drill.
 
+```
+npm install grunt-contrib-clean --save-dep
+```
 
-## Committing a clean build
+And now we're adding a config to the Gruntfile.js somewhat like the following, adjust to
+your tastes:
 
-*** How to use the grunt-git plugin to checkout a shallow branch, build to it, and then
-committing it back to the repo.
+```javascript
+clean: {
+    release: ["target"],
+    all: ["libs","node_modules","target"]
+}
+```
 
-### Creating an Orphan branch
+And let's give this one a whirl:
 
-*** The basics on how to create an orphan branch with example code
+```
+grunt clean:release
+```
 
-### Cloning for temporary use
+And all our hard work has been undone! Of course, if you've done everything right, this
+now makes for a repeatable stunt. You can check up on the [reference repository][c4] to
+double-check your work if so desired.
 
-*** shallow clones
+## The Utopia Cocktail
 
-### Comitting results
+That was a long read and test-run, if the time I spent creating this article is any
+indication. But, there's one last nugget left. For those who've been looking at the
+[reference repository][6] this is not a surprise, for the rest of you this should explain
+how I've mixed all of the above ingredients together.
+
+I personally added the following task to my Gruntfile.js:
+
+```javascript
+grunt.registerTask(
+    "install",
+    [
+        "clean:release",
+        "jshint",
+        "mkdir",
+        "copy:release",
+        "useminPrepare",
+        "concat:generated",
+        "cssmin:generated",
+        "uglify:generated",
+        "usemin"
+    ]
+);
+```
+
+As I hope you're now familiar with all these ingredients you can see that I first throw
+away the old target directory. I then run jshint to verify my code doesn't suck, then make
+sure we have a new target directory, copy the project files into it and finally run the
+whole usemin pipeline.
+
+The end result is a smooth 'single command build' that should result in a clean build of
+my project, with concatenated and minified files for optimal performance! A little bonus,
+install *[http-server][8]* globally (`npm install http-server -g`) and enjoy your new
+build without configuring some fancy-shmancy big webserver.
+
+```
+grunt install
+http-server target/release -o
+```
+
+## Clean build TL;DR
+
+Install these dependencies
+
+```
+npm install --save-dev grunt-mkdir grunt-contrib-copy grunt-usemin grunt-contrib-concat
+npm install --save-dev grunt-contrib-uglify grunt-contrib-cssmin grunt-filerev
+npm install --save-dev grunt-contrib-clean
+```
+
+Add the following to your Gruntfile.js:
+
+```javascript
+clean: {
+    release: ["target"],
+    all: ["libs","node_modules","target"]
+},
+copy: {
+    release: {
+        files: [
+            {
+                expand: true, flatten: false,
+                src: [
+                    "*.html",
+                    "fav*.*",
+                    "assets/**/*",
+                    "js/**/*",
+                    "libs/**/*",
+                    "css/**/*"
+                ],
+                dest: "target/release/"
+            }
+        ]
+    }
+},
+mkdir: {
+    target: {
+        options: {
+            create: ["target"]
+        }
+    }
+},
+useminPrepare: {
+    options: {
+        dest: "target/release/",
+        staging: "target/staging/"
+    },
+    html: ["target/release/index.html"]
+},
+usemin: {
+    html: ["target/release/index.html"]
+}
+
+grunt.registerTask(
+    "install",
+    [
+        "clean:release",
+        "mkdir",
+        "copy:release",
+        "useminPrepare",
+        "concat:generated",
+        "cssmin:generated",
+        "uglify:generated",
+        "usemin"
+    ]
+);
+
+```
+
+Run:
+
+```
+grunt install
+```
 
 ## Next
 
-In the [next chapter][n] we'll be discussing how to use [Grunt][4] to trigger a build on
-[Phonegap][1].
+In the [next chapter][n] we'll be discussing how to use [Grunt][4] to put the resulting
+project files into a clean repository.
 
 [1]: https://build.phonegap.com/
 [2]: https://github.com/pricing/
@@ -205,10 +331,12 @@ In the [next chapter][n] we'll be discussing how to use [Grunt][4] to trigger a 
 [g5]: https://github.com/gruntjs/grunt-contrib-uglify
 [g6]: https://github.com/gruntjs/grunt-contrib-cssmin
 [g7]: https://github.com/yeoman/grunt-filerev
+[g8]: https://github.com/gruntjs/grunt-contrib-clean
 
 [c1]: https://bitbucket.org/windgazer/grunt-build/commits/3160955f53d75b6ac88c5def46b962d798731937
 [c2]: https://bitbucket.org/windgazer/grunt-build/commits/41821ef4636ba31a6689fe7b26c8e7c3b1241b5a
 [c3]: https://bitbucket.org/windgazer/grunt-build/commits/32197515c3fdb3601873f0697adae16de0af10cf
+[c4]: https://bitbucket.org/windgazer/grunt-build/commits/96ee47ad9827e9ed6383592cf0a61a0edc169941
 
 [p]: /post/bitbucket2phonegap-ptI/
 [n]: /post/bitbucket2phonegap-ptIII/
