@@ -13,7 +13,7 @@
 	margin-right: $m_whitespace;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Poiret+One|Libre+Baskerville|Gabriela|Quattrocento|Linden+Hill|Coda);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Baskerville|Gabriela|Quattrocento|Linden+Hill|Coda);
 
 h1, h2, h3, h4, h5, p {
 	@extend %reset;
@@ -109,7 +109,7 @@ a {
 	color: $c_cta;
 }
 
-.tag_javascript {
+.tag_javascript, .tag_coding {
 	& h1, h2, h3, h4, h5 {
 		font-family: 'Coda', cursive;
 	}
@@ -121,14 +121,14 @@ a {
 	}
 }
 
-.tag_markdown {
+.tag_markdown, .tag_writing, .tag_blog {
 	& h1, h2, h3, h4, h5 {
 		font-family: 'Libre Baskerville', serif;
 	}
 }
 
 .tag_css {
-	& h1, h2, h3, h4, h5 {
-		font-family: 'Poiret One', cursive;
+	& h1, h2, h3, h4, h5, &.media {
+		font-family: 'Josefin Sans', sans-serif;
 	}
 }
