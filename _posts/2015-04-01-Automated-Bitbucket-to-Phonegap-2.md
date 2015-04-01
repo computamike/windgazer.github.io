@@ -10,23 +10,15 @@ tags:
 ---
 
 Continuing to build on our [previous article][p] that dealt with linking [Phonegap][1] to
-[Bitbucket][3], this post is going to walk you through creating a clean release branch.
-A clean orphan branch will allow you to keep the releases in the same repository. Yet, it
-also allows for a place to share code without distracting build configurations,
-documentation and whatever else is irrelevant to consumers of your project. I use this for
-my Phonegap builds as well as my [Bower][5] releases.
+[Bitbucket][3], this post is going to walk you through creating a clean release directory.
+It's nice to have a place where you can have automated tools mess with your code, but at
+the same time not messing with your actual codebase.
 
 I'll be building a reference implementation on *[grunt-build][6]* while working on this
 article, to validate my commands and hopefully to have a nice reference build to clone
 from when I start new projects.
 
 ## Creating a clean build
-
-I like being able to share my projects, even if sometimes I'm only sharing them with
-myself. However, often I don't want to be sharing all the development clutter, like tests,
-docs, and other dependencies. So, even if it's not required per se, I still end up
-creating a build stage into my project. As a target for the build I'm using an *orphan
-branch*. That way it's still part of the project repository, but yet stands on it's own.
 
 ### Create a build directory
 

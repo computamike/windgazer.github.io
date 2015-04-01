@@ -20,10 +20,13 @@ I'll be building a reference implementation on *[grunt-build][6]* while working 
 article, to validate my commands and hopefully to have a nice reference build to clone
 from when I start new projects.
 
-## Committing a clean build
+## Working with a clean repository
 
-*** How to use the grunt-git plugin to checkout a shallow branch, build to it, and then
-committing it back to the repo.
+I like being able to share my projects, even if sometimes I'm only sharing them with
+myself. However, often I don't want to be sharing all the development clutter, like tests,
+docs, and other dependencies. So, even if it's not required per se, I still end up
+creating a build stage into my project. As a target for the build I'm using an *orphan
+branch*. That way it's still part of the project repository, but yet stands on it's own.
 
 ### Creating an Orphan branch
 
