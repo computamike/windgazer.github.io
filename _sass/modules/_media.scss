@@ -5,8 +5,7 @@
 .latest {
 	@extend %reset;
 	@extend %p_box_a;
-	width: 48em;
-	white-space: nowrap;
+	width: 49em;
 	overflow: auto;
 }
 
@@ -55,8 +54,32 @@
 		top: -1em;
 	}
 	& > p {
-		height: 2.25em;
+		height: 5.8em;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+}
+
+.media.tag_javascript {
+	& > h3 {
+		font-family: 'Coda', cursive;
+	}
+}
+
+.media.tag_personal {
+	& > h3 {
+		font-family: 'Gabriela', serif;
+	}
+}
+
+.media.tag_markdown {
+	& > h3 {
+		font-family: 'Libre Baskerville', serif;
+	}
+}
+
+.media.tag_css {
+	& > h3 {
+		font-family: 'Poiret One', cursive;
 	}
 }

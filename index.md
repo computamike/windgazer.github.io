@@ -10,4 +10,4 @@ time it was a great thing, then my server died, while I was on the road and thin
 really were the same.  
 &nbsp;&nbsp; But now I find myself again missing a place to just dump my train of thought, where people
 can read them, or ignore them. So if you're still reading, have a gander and see if
-there's anything here that peeks your interrest.
+there's anything here that peeks your interest.
