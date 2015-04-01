@@ -5,8 +5,7 @@
 .latest {
 	@extend %reset;
 	@extend %p_box_a;
-	width: 48em;
-	white-space: nowrap;
+	width: 49em;
 	overflow: auto;
 }
 
@@ -18,9 +17,6 @@
 	@extend %reset;
 	@extend %p_box;
 	@extend %m_content;
-	border: ($m_whitespace / 10) solid $c_content;
-	border-bottom: 0;
-	border-right: 0;
 	display: inline-block;
 	padding-left: (8em + $m_whitespace);
 	position: relative;
@@ -55,7 +51,7 @@
 		top: -1em;
 	}
 	& > p {
-		height: 2.25em;
+		height: 5.8em;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}

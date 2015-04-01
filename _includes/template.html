@@ -14,7 +14,7 @@
                 </nav>
                 {% include social.html %}
             </aside>
-            <article id="{{ include.id }}">
+            <article id="{{ include.id }}" class="{% for tag in page.tags %} tag_{{tag}}{% endfor %}">
 
                 {{ include.content }}
 

@@ -13,7 +13,7 @@
 	margin-right: $m_whitespace;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Linden+Hill);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Baskerville|Gabriela|Quattrocento|Linden+Hill|Coda);
 
 h1, h2, h3, h4, h5, p {
 	@extend %reset;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: ($m_whitespace * 1.5);
 	text-align: left;
 	font-size: 1.25em;
-    font-family: 'Linden Hill', serif;
+	font-family: 'Libre Baskerville', serif;
     & + p {
     	text-indent: 1em;
     }
@@ -36,8 +36,13 @@ h1 {
 	text-transform: uppercase;
 }
 
+body {
+	font-family: 'Quattrocento', serif;
+}
+
 header > h1 {
     font-size: 4em;
+	font-family: 'Linden Hill', serif;
     padding: ($m_whitespace * 1.5) 0 0;
     margin: 0;
 	text-transform: inherit;
@@ -102,4 +107,28 @@ p {
 
 a {
 	color: $c_cta;
+}
+
+.tag_javascript, .tag_coding {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Coda', cursive;
+	}
+}
+
+.tag_personal {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Gabriela', serif;
+	}
+}
+
+.tag_markdown, .tag_writing, .tag_blog {
+	& h1, h2, h3, h4, h5 {
+		font-family: 'Libre Baskerville', serif;
+	}
+}
+
+.tag_css {
+	& h1, h2, h3, h4, h5, &.media {
+		font-family: 'Josefin Sans', sans-serif;
+	}
 }
