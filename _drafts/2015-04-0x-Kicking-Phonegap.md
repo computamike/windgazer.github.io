@@ -16,6 +16,12 @@ also allows for a place to share code without distracting build configurations,
 documentation and whatever else is irrelevant to consumers of your project. I use this for
 my Phonegap builds as well as my [Bower][5] releases.
 
+### Creating a basic auth 'hash'
+
+```javascript
+btoa("[username]:[password]");
+```
+
 ## Next
 
 In the [next chapter][n] we'll be discussing some advanced [Grunt][4] usage to achieve
