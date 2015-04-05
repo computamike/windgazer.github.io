@@ -35,7 +35,7 @@ First thing on the menu is creating our release branch. It'll be an 'orphan' bra
 for this one-time performance, we can't use grunt. Not to sweat though, it's not all that
 complicated and, as I mentioned, a one time affair.
 
-If you've been following my ongoing series on clean builds, you should start by cleaning
+If you've been following my [ongoing series][s] on clean builds, you should start by cleaning
 up:
 
 ```
@@ -69,7 +69,7 @@ command-line, or the other way around. As such a commit of this can be view on m
 [reference repository][c1].
 
 Don't forget to go back to your `master` branch and rebuilding whatever you need. For
-those of you following my bitbucket to phonegap series:
+those of you following my [bitbucket to phonegap series][s]:
 
 ```
 git checkout master
@@ -138,7 +138,7 @@ yet, go ahead and add it to your `package.json`, it's sort of expected these day
 ```
 
 Now, let's give it a try, shall we (the mkdir directive is optional, but added for loyal
-subscribers to my current series on Automated Bitbucket to Phonegap builds)?
+subscribers to my [current series][s] on Automated Bitbucket to Phonegap builds)?
 
 ```
 grunt mkdir gitclone:release
@@ -152,7 +152,7 @@ just done have a look at the [relevant commit][c2] on the [reference repository]
 ### Comitting results
 
 For this trick I'm going to assume you've also gone through and implemented [ptII][p] of
-this series of posts. I'll be building on top of that. So, adjust to your own situation
+[this series of posts][s]. I'll be building on top of that. So, adjust to your own situation
 where appropriate...
 
 The main assumption is that you've been able to set up a process that processes/parses
@@ -360,3 +360,4 @@ incremented build version.
 
 [p]: /post/bitbucket2phonegap-ptII/
 [n]: /post/bitbucket2phonegap-ptIV/
+[s]: /tags/bitbucket2phonegap/

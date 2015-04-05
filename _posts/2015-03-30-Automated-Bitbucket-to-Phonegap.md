@@ -12,7 +12,7 @@ tags:
 
 The holy grail of development would be that you just write code and it somehow makes it to
 your target device... I don't quite think we'd be able to get there yet, but in the mean
-time I still aim to get closer and closer to that Utopia. In this series I aim to
+time I still aim to get closer and closer to that Utopia. In [this series][s] I aim to
 document, as much for myself as anybody else on the net, how I currently get from a messy
 code repository, to a clean build compiled on [build.phonegap.com][1], using [Grunt][4] on
 the command-line.
@@ -96,6 +96,7 @@ and how to use that branch with [Grunt][4] to create your clean build.
 [4]: http://gruntjs.com/
 
 [n]: /post/bitbucket2phonegap-ptII/
+[s]: /tags/bitbucket2phonegap/
 
 [I]: https://www.flickr.com/photos/windgazer/16976845135
 [imgI]: https://farm8.staticflickr.com/7621/16976845135_525e4112fa_z.jpg
