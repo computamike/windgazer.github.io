@@ -1,5 +1,3 @@
 ---
-title: CSS posts
+tag: css
 ---
-
-{% include posts.html posts=site.tags.css class="archive" %}

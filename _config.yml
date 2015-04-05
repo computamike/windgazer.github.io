@@ -23,3 +23,9 @@ defaults:
       type: "drafts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "tags"
+      type: "pages"
+    values:
+      layout: "tags"
