@@ -1,12 +1,13 @@
 ---
 title: Using Grunt to kick Phonegap
 excerpt: Telling Phonegap to update the project code, using grunt.
-date: 2015-04-03
-permalink: /post/bitbucket2phonegap-ptIV
+date: 2015-04-08
+permalink: /post/bitbucket2phonegap-ptV
 tags:
   - javascript
   - development
   - windgazer
+  - bitbucket2phonegap
 ---
 
 Continuing to build on our [previous article][p] that dealt with linking [Phonegap][1] to
@@ -33,5 +34,5 @@ versioning of the project, including tagging of the repository.
 [4]: http://gruntjs.com/
 [5]: http://bower.io/
 
-[p]: /post/bitbucket2phonegap-ptIII/
-[n]: /post/bitbucket2phonegap-ptV/
+[p]: /post/bitbucket2phonegap-ptIV/
+[n]: /post/bitbucket2phonegap-ptVI/
