@@ -4,7 +4,7 @@ excerpt: How to use Grunt and Git together in tagging your repo with Semver appr
 date: 2015-04-05
 permalink: /post/bitbucket2phonegap-ptIV
 tags:
-  - javascript
+  - grunt
   - development
   - windgazer
   - bitbucket2phonegap

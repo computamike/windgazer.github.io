@@ -4,7 +4,7 @@ excerpt: How to create a clean release folder with Grunt and do some processing 
 date: 2015-04-01
 permalink: /post/bitbucket2phonegap-ptII
 tags:
-  - javascript
+  - grunt
   - development
   - windgazer
   - bitbucket2phonegap

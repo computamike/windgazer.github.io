@@ -3,8 +3,9 @@ title: The far North
 excerpt: How we made it as far as it was comfortable to go...
 date: 2014-11-18
 tags:
-  - personal
-  - oz14
+    - oz14
+    - travel
+    - personal
 ---
 
 After a little internet time I added a shot from within the lava-tubes towards the exit.

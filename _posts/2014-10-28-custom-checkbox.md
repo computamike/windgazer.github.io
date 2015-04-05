@@ -2,6 +2,7 @@
 title: Custom Checkbox using CSS3
 tags:
   - css
+  - development
   - html
 excerpt: How to do style a checkbox? Hide it!
 ---

@@ -1,7 +1,9 @@
 ---
 title: CSS Parallax, pt II
 date: 2013-09-27 13:00
-tags: css
+tags:
+  - css
+  - development
 permalink: /post/css-parallax-pt-ii
 excerpt: One step further on the journey to Parallax in CSS. In this installment I explain my oversight of the past and insight into the final solution...
 ---

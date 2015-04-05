@@ -3,8 +3,9 @@ title: Under Down Under
 excerpt: Getting our feet wet on the great barrier reef!
 date: 2014-12-05
 tags:
-  - personal
   - oz14
+  - travel
+  - personal
 ---
 
 So, again time as gone by like there's no tomorrow. Here I am struggling to keep you guys

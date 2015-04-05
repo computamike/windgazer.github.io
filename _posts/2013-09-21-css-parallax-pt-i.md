@@ -1,7 +1,9 @@
 ---
 title: CSS Parallax, pt I
 date: 2013-09-21 20:07
-tags: css
+tags:
+  - css
+  - development
 permalink: /post/css-parallax-pt-i
 excerpt: Parallax is probably one of the oldest (fake) 3D perspectives in use on computers, I wanted to take it on in a slightly novel way, with a minimum of javascript and as much power out of CSS as I can. However, I also wanted it to react on the mouse, not so much scrolling around...
 ---

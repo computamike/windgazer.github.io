@@ -4,7 +4,7 @@ excerpt: How to create a clean release branch and make good use of it with Grunt
 date: 2015-04-02
 permalink: /post/bitbucket2phonegap-ptIII
 tags:
-  - javascript
+  - git
   - development
   - windgazer
   - bitbucket2phonegap

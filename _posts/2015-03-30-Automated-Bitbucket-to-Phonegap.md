@@ -4,7 +4,7 @@ excerpt: Using grunt to create a build, then triggering phonegap to actually to 
 date: 2015-03-30
 permalink: /post/bitbucket2phonegap-ptI
 tags:
-  - javascript
+  - phonegap
   - development
   - windgazer
   - bitbucket2phonegap

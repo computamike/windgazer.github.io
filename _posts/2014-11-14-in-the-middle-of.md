@@ -3,8 +3,9 @@ title: In the middle of nowhere, or lava-tubes
 excerpt: We went looking for quiet, and heat...
 date: 2014-11-14
 tags:
-  - personal
-  - oz14
+    - oz14
+    - travel
+    - personal
 ---
 
 Since last I told about getting our car and all the first big stop was going to be near

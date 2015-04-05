@@ -3,7 +3,7 @@ title: Can I embed png's in Markdown?
 date: 2014-06-16 12:00
 tags:
   - markdown
-  - internet
+  - development
 excerpt: Just some crazy concept I was wondering about...
 ---
 
