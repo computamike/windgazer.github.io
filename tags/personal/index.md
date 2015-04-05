@@ -1,5 +1,3 @@
 ---
-title: Personal posts
+tag: personal
 ---
-
-{% include posts.html posts=site.tags.personal class="archive" %}

@@ -7,6 +7,7 @@ tags:
   - javascript
   - development
   - windgazer
+  - bitbucket2phonegap
 ---
 
 The holy grail of development would be that you just write code and it somehow makes it to

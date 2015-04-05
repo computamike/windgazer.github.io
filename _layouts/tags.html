@@ -1,12 +1,8 @@
 {% assign taggedPosts = site.tags[page.tag] %}
-{% capture pageTitleOverride%}Tag: {{page.tag}}{%endcapture%} 
+{% capture pageTitleOverride%}Tag: {{page.tag}}{%endcapture%}
 {% capture myContent %}
     <h1>Articles by tag: {{ page.tag }}</h1>
 
     {% include posts.html posts=taggedPosts class="archive" %}
-
-    <p>
-        {{pageTitleOverride}}
-    </p>
 
 {% endcapture %}{% include template.html content=myContent id="archive" %}

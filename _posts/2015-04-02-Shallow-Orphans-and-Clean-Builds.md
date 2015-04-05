@@ -7,6 +7,7 @@ tags:
   - javascript
   - development
   - windgazer
+  - bitbucket2phonegap
 ---
 
 Continuing to build on our [previous article][p] that dealt with linking creating a safe

@@ -7,6 +7,7 @@ tags:
   - javascript
   - development
   - windgazer
+  - bitbucket2phonegap
 ---
 
 ## Creating a clean build
