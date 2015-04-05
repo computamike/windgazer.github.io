@@ -1,7 +1,7 @@
 ---
 title: Using Grunt and Git for versioning
 excerpt: How to use Grunt and Git together in tagging your repo with Semver approved versioning.
-date: 2015-04-06
+date: 2015-04-05
 permalink: /post/bitbucket2phonegap-ptIV
 tags:
   - javascript
