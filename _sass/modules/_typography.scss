@@ -91,14 +91,19 @@ img:last-child {
 	-webkit-columns: 3;
 }
 
-#home > h1,
-#home > h2,
-#home > h3,
-#home pre,
-#home iframe,
-#home > ul,
-#home > ol {
-	-webkit-column-span: all;
+#default {
+	-webkit-columns: 2;
+}
+
+#home, #default {
+	& > h1, h2, pre, iframe, ul, ol {
+		-webkit-column-span: all;
+	}
+
+	& > h2 {
+		border-top: 1px solid black;
+		padding-top: 1em;
+	}
 }
 
 p {

@@ -1,13 +1,16 @@
 ---
 title: Home
+layout: home
 ---
 
-# My place to rant and rave
+Like the bend in the river that once was straight, the crack in your wind-shield that
+started as chip, the ripples in the pond that was smooth as a river. A little pebble, so
+seemingly insignificant can have a huge effect.
 
-  Not so long ago I used to have a blog. This was a nice thing, a place where I could put
-down my thoughts and people could read them, or ignore them, whichever they pleased. For a
-time it was a great thing, then my server died, while I was on the road and things never
-really were the same.  
-&nbsp;&nbsp; But now I find myself again missing a place to just dump my train of thought, where people
-can read them, or ignore them. So if you're still reading, have a gander and see if
-there's anything here that peeks your interest.
+This is my blog, sometimes it'll get personal, sometimes it'll get technical and sometimes
+even I might not have known what I was thinking! I try to keep it light, I try to fight
+against the 'common knowledge' misconception, but sometimes I just need to get something
+of my chest...
+
+So, I hope you'll stick around and find something of your liking. Don't be shy to leave a
+comment, I'd love to know what you think, and, have a nice day ;)
