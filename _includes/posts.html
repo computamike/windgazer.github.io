@@ -1,9 +1,9 @@
-<ul class="{{include.class}}">{% for post in include.posts %}
+<ul class="{{include.class}}">{% for post in include.posts %}{% capture purl %}{{ site.url }}{{ post.url }}{%endcapture%}
     <li class="media{% for tag in post.tags %} tag_{{tag}}{% endfor %}">
         <img src="{{ site.url }}/thumbs/{{post.tags.first}}.png" alt="thumb" />
-        <h3>{{ post.title }}</h3>
+        <h3><a href="{{ purl }}">{{ post.title }}</a></h3>
         {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>{% endif %}
         <p class="introduction">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-        <a href="{{ site.url }}{{ post.url }}">More...</a>
+        <a href="{{ purl }}">More...</a>
     </li>
 {% endfor %}</ul>
