@@ -1,7 +1,7 @@
 ---
 title: Using Grunt to kick Phonegap
 excerpt: How to make Phonegap update and rebuild based on your latest repository commit.
-date: 2015-04-08
+date: 2015-04-07
 permalink: /post/bitbucket2phonegap-ptV
 tags:
   - phonegap
