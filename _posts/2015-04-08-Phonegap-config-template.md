@@ -1,7 +1,7 @@
 ---
 title: Making your Phonegap config into a template
 excerpt: How to use copy filtering and a template to version your Phonegap config.
-date: 2015-04-07
+date: 2015-04-08
 permalink: /post/bitbucket2phonegap-ptVI
 tags:
   - phonegap
@@ -147,6 +147,9 @@ This will put the config file into your build directory, filtered and all. Now w
 you build, it will carry an updated version. More importantly, the `versionCode` is always
 a unique and incremental number, satisfying Android builds when you're busy testing.
 
+As per usual, you can have a look at what the files need to look like by verifying them
+against the [relevant commit][c1] of my reference repository.
+
 ## Next
 
 In the [next chapter][n] I'll be throwing in the next bit of bonus content. We'll try and
@@ -155,6 +158,8 @@ builds properly.
 
 [1]: https://build.phonegap.com/
 [2]: https://bitbucket.org/
+
+[c1]: https://bitbucket.org/windgazer/grunt-build/commits/d1621aa02e131d570cab98d3a064758ff836c7da
 
 [g1]: https://github.com/gruntjs/grunt-contrib-copy
 
