@@ -14,6 +14,8 @@ Continuing to build on our [previous article][p] that dealt with versioning of o
 and release code, this article will reveal how to give [Phonegap][1] a kick in the but and
 get it into action, without having to logon to the website manually.
 
+*Revised on 2015-04-12, discovered blogged http-task was incomplete*
+
 ## The Phonegap API
 
 Maybe not the first thing people would think of checking but PhoneGap Build does have [an
@@ -95,7 +97,7 @@ For instance `btoa( "dodo@extinct.com:d0d0XL" )` would end up looking like
 `ZG9kb0BleHRpbmN0LmNvbTpkMGQwWEw=`. You should copy that hash unto your clipboard. It's
 only BASE64 encoded, so that's in no way safe for the repository. Instead we're going to
 save the hash in a file in our user directory! Use any method you have at your disposal
-to create a file in your user directory and put the has into it. An example command for a
+to create a file in your user directory and put the hash into it. An example command for a
 `*`nix flavoured OS is:
 
 ```
@@ -103,7 +105,7 @@ printf [hash]>~/.phonegap.auth
 ```
 
 I'm also working towards having a common `Gruntfile.js` for all of my projects, so I've
-move my app id to the `package.json` file in the `info.id` custom property.
+moved my app id to the `package.json` file in the `info.id` custom property.
 
 ### Using headers to hide our Auth request
 
@@ -121,6 +123,11 @@ http: {
                 "Authorization": "Basic " +
                     "<%= grunt.file.read( process.env[\"HOME\"] + \"/.phonegap.auth\") %>",
                 "Accept": "*/*"
+            },
+            form: {
+                data: {
+                    pull: true
+                }
             }
         },
         dest: "target/release/phonegap.response.json"
@@ -196,7 +203,7 @@ and `development` builds properly.
 
 [a1]: http://docs.build.phonegap.com/en_US/developer_api_write.md.html#_put_https_build_phonegap_com_api_v1_apps_id
 
-[c1]: https://bitbucket.org/windgazer/grunt-build/commits/f86a0ff8b4d2df3b65cc1169e343a394b3d8d061
+[c1]: https://bitbucket.org/windgazer/grunt-build/branches/compare/29278f41cb48a1f1ad049770f8db1df55b199793..ab3f5b774ad80bdac5a18da88f1fd19a26cdb009#diff
 
 [g1]: https://github.com/johngeorgewright/grunt-http
 
