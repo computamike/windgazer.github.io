@@ -2,7 +2,6 @@
 title: CDN and SSL for free, am I dreaming?
 excerpt: Somebody contacted me regarding my github hosted sites and how I might easily add some free SSL certs, I got curious
 date: 2016-03-14
-permalink: /post/blank
 tags:
   - git
   - windgazer
