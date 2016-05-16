@@ -1,6 +1,6 @@
 ---
 title: Our van in time-lapse
-excerpt: I'm convering a van to a camper-van with my travel-budy. This is a quick
+excerpt: I'm converting a van to a camper-van with my travel-buddy. This is a quick
     time-lapse of how far we've come in the last 2 months.
 date: 2016-05-16
 tags:
@@ -10,7 +10,7 @@ tags:
   - camper-van
 ---
 
-Some time ago me and my travel-body bought ourselves a Mercedes Sprinter. We wanted to
+Some time ago me and my travel-buddy bought ourselves a Mercedes Sprinter. We wanted to
 travel Europe in somewhat more luxury than we've done in Australia. Going from a
 Mitsubishi Pajero up to a Sprinter is a significant increase in space of course, but more
 importantly, it's a lot more work :).
