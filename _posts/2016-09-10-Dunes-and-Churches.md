@@ -91,7 +91,7 @@ As we've hit the far north, now we're making our way back down and will soon be 
 modern-day things, like visiting Aarhus museums, amusement parks and possibly even a zoo!
 But more on that, once we've actually done the deeds.
 
-[I]: https://www.flickr.com/photos/windgazer/"FLICKR_ID"
-[imgI]: "FLICKR_PhotoURL"
-[II]: https://www.flickr.com/photos/windgazer/"FLICKR_ID"
-[imgII]: "FLICKR_PhotoURL"
+[I]: https://www.flickr.com/photos/windgazer/29544022086
+[imgI]: https://c7.staticflickr.com/9/8402/29544022086_6aee4cbfbd.jpg
+[II]: https://www.flickr.com/photos/windgazer/29468197352
+[imgII]: https://c1.staticflickr.com/9/8031/29468197352_ab3dd8959d_c.jpg
