@@ -3,9 +3,9 @@ title: Viking Culture
 excerpt: The Vikings may be seen as barbarians, but they've always been more cultured than we'd like to admit.
 date: 2016-09-17
 tags:
+  - dk16
   - personal
   - travel
-  - dk16
 ---
 
 Making our ways back from the 'far north' we started immersing ourselves into the Viking

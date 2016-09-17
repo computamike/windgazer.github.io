@@ -3,9 +3,9 @@ title: Dunes and Churches
 excerpt: The Danes are horrible with road-signs and really seem to love Churches!
 date: 2016-09-10
 tags:
+  - dk16
   - personal
   - travel
-  - dk16
 ---
 
 After a hard two days of a lot of powerpoints and alcohol, I managed to find my way to
